@@ -1,0 +1,149 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>AFIT - Technology Readiness Assessment</title>
+<!-- TemplateEndEditable -->
+<link href="../afit_tra.css" rel="stylesheet" type="text/css" />
+
+
+<script type="text/javascript" src="../scripts/afit_tra.js"></script>
+<script type="text/javascript" src="../scripts/jquery-1.3.2.min.js"></script>
+<script type="text/javascript" src="../scripts/jqFunctions.js"></script>
+<script type="text/javascript" src="../scripts/swfobject_modified.js"></script>
+<!-- TemplateBeginEditable name="head" -->
+<script language="javascript" type="text/javascript">
+	//Set the following 3 variables to true accordingly
+	blnFirstPage = false;
+	blnLastPage = false;
+	blnHasCC = false;
+
+	function pgInitialize() {
+	}
+	
+	function goNext() {
+		nextURL = "#####.html";
+		parent.gotoPage("f", nextURL);
+	}
+	
+	function goBack() {
+		backURL = "#####.html";
+		parent.gotoPage("b", backURL);
+	}
+
+	hideNext = true;
+	
+	$(document).ready (function() {
+		if ( blnFirstPage ) $("#back").addClass("disabled");
+		if ( hideNext ) hideNextButton();
+/*		
+		$("#help").mouseover( function() {
+			$("#helppanel").css("visibility", "visible");				   
+		});
+		$("#help").mouseout( function() {
+			$("#helppanel").css("visibility", "hidden");				   
+		});
+*/		
+	});
+	
+	
+
+</script>
+<!-- TemplateEndEditable -->
+</head>
+
+<body  class="holder" onload="pgInitialize()" >
+<div id="container">
+
+  <div id="titlebar">
+  	<div id="title_text">
+    	<span class="module"><!-- TemplateBeginEditable name="moduleTitle" -->TRA > Module 1 &gt; <!-- TemplateEndEditable --></span><span class="lesson"><!-- TemplateBeginEditable name="lessonTitle" -->Lesson 1<!-- TemplateEndEditable --></span>
+    </div>
+  </div>
+  
+  <div id="pagenumber"><!-- TemplateBeginEditable name="pageNum" -->24/34<!-- TemplateEndEditable --></div>
+  
+  <div id="content_holder"> <!-- contains title, text and graphic/flash -->
+  
+  	<div id="content">
+<!-- TemplateBeginEditable name="contents" -->
+    	page title
+        <p>page text</p>
+        <p>page graphic</p>
+        <p><a href="javascript:showNextButton()">Show NEXT button</a></p>
+    <!-- TemplateEndEditable -->
+  	</div>
+  
+  </div> <!-- End of content_holder -->
+    <div id="action"><!-- TemplateBeginEditable name="action" --><!-- TemplateEndEditable --></div>
+    <div id="dlink"><!-- TemplateBeginEditable name="dlink" -->d-link<!-- TemplateEndEditable --></div>
+  
+  <!-- TemplateBeginEditable name="Prompt" --><div id="prompt">Select NEXT to continue.</div><!-- TemplateEndEditable -->
+    
+  <div id="navbar">  <!-- contains all buttons -->
+  
+    <a href="javascript:goNext()"><div id="next"></div></a>
+    
+    <a href="javascript:goBack()"><div id="back"></div></a>
+    
+  	<a href="javascript:exitConfirm()"><div id="exit"></div></a>
+    
+  	<div id="progressbar"> </div>
+    
+    <div id="pagecounter"></div>
+    
+	<div id="submenu">  <!-- contains MENU, TOPICS, ASSETS, and HELP -->
+    
+        <a href="javascript: parent.toModuleMenu();" ><div id="menu"></div></a>
+        
+      <a href="javascript:showTopics()"> <div id="topics"></div></a>
+        
+        <a href="javascript:toggle_asset()"><div id="assets"></div></a>
+        
+        <a href="javascript:toggle_help()"><div id="help"></div></a>
+
+    </div> <!-- End of submenu -->
+
+	<div id="assetpanel">
+    	<div id="gloss" class="panel"><a class="panel" href="javascript:javascript:openGlossary();">Glossary</a></div>
+        <div id="doc" class="panel"><a class="panel" href="javascript:;">Documents</a></div>
+        <div id="ref" class="panel"><a class="panel" href="javascript:javascript:openReferences();">References</a></div>
+    </div>
+    
+	<div id="helppanel">
+    	<div id="admin" class="panel"><a class="panel" href="javascript:;">Course Admin</a></div>
+        <div id="sysreq" class="panel"><a class="panel" href="javascript:;">System Req</a></div>
+        <div id="nav" class="panel"><a class="panel" href="javascript:;">Navigation</a></div>
+    </div>
+    
+	<div id="options">  <!-- containes Closed Caption, Audio, and Refresh -->
+        
+		<a href="javascript:refresh()" accesskey="r"><div id="refresh"></div></a>
+        
+        <a href="javascript:showCC()"><div id="cc"></div></a>
+        
+        <a href="#" class="audioAction" id="audioImage"><div id="audio"></div></a>
+        
+    </div> <!-- End of options -->
+    
+  </div> <!-- End of Navbar -->
+  
+    
+</div> <!-- End of Container -->
+<!-- TemplateBeginEditable name="DD" -->Put DD layers here<!-- TemplateEndEditable -->
+<div id="comment_link">
+    <a href="javascript:addComment()">Add Comment</a>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="javascript:viewComment()">View Comments</a>
+</div>
+<script language="javascript">
+	if (parent.isPilot == true) {
+		moduleID = parent.module;
+		lessonID = parent.getLesson();
+	} else {
+		document.getElementById("comment_link").style.visibility = "hidden";
+	}
+</script>
+</body>
+</html>

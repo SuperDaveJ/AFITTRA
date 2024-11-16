@@ -1,0 +1,47 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+	background: #000 url(system/bkg_breadcrumbbar_half.png) top left no-repeat;
+	color:#FFF;
+	font: normal 14px Arial, Helvetica, sans-serif;
+	text-align: left;
+	padding: 0 12px;
+}
+
+.feedback_title {
+	position:relative; 
+	top:7px;
+	left:90px;
+	color:#ffc425;
+	font-size:14px; 
+	font-weight:bold;
+}
+
+#content {
+	position:relative;
+	top: 25px;
+	left: 0;
+	overflow: auto;
+}
+
+#close {
+	position:relative;
+	top:30px;
+	left:0px
+}
+
+.lessonTopic {
+	font-size: 14px;
+	font-weight: bold;
+}
+
+/************ Link on black background ***************/
+a.bb, a.bb:link, a.bb:hover, a.bb:active, a.bb:visited {
+	font-weight:bold;
+	color:#FFF;
+	outline:none;
+}
+a.bb:hover {
+	text-decoration:none;
+}
+/************ End of Link on black background ***************/

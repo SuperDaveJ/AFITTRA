@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/lessonTopic.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Lesson Topics</title>
+<!-- InstanceEndEditable -->
+<link rel="stylesheet" type="text/css" href="../../lessonTopics.css" />
+<script type="text/javascript" src="../../scripts/afit_tra.js"></script>
+<script language="javascript">
+var strHTML = "";
+opener.parent.entryNumber = 1;
+
+function jumpToPage(pgURL) {
+	strTemp = window.opener.location.href;
+	iTemp = strTemp.lastIndexOf("/");
+	pgURL = strTemp.substring(0, iTemp+1) + pgURL;
+	window.opener.location.href = pgURL;
+}
+
+function getLessonTopics() {
+	strHTML += "<a href='javascript:jumpToPage(\"" + arrLesPgs[0][0] + ".html\")' class='allowed'>" + arrLesPgs[0][1] + "</a>";
+	for (var i=1; i<arrLesPgs.length; i++) {
+		if ( opener.parent.isPageViewed(arrLesPgs[i][0]) ) {
+			strHTML += "<br /><a href='javascript:jumpToPage(\"" + arrLesPgs[i][0] + ".html\")' class='allowed'>" + arrLesPgs[i][1] + "</a>";
+		} else {
+			strHTML += "<br /><span class='notallowed'>" + arrLesPgs[i][1] + "</span>";
+		}
+	}
+}
+
+</script>
+</head>
+
+<body>
+<!-- InstanceBeginEditable name="topicTitle" -->
+<h1 class="title"><span class="mocule">Module 1</span>: Lesson 1 Topics</h1>
+<!-- InstanceEndEditable -->
+
+<!-- InstanceBeginEditable name="JavaScript1" -->
+<div id="content" class="lessonTopic">
+<h2> <span class="mocule">Lesson 1:</span> Introduction to TRAs</h2>
+<script language="JavaScript" type="text/javascript">
+	//Put page files and titles in a 2-D array here
+	var nPages = 34;
+	var arrLesPgs = [];
+	for (var i=0; i<nPages; i++) arrLesPgs[i] = [];
+	arrLesPgs[0][0] = "11010";	arrLesPgs[0][1] = "Page 1: Lesson Overview";
+	arrLesPgs[1][0] = "11020";	arrLesPgs[1][1] = "Page 2: TRA Definition";
+	arrLesPgs[2][0] = "11030";	arrLesPgs[2][1] = "Page 3: Technology Readiness Levels";
+	arrLesPgs[3][0] = "11040";	arrLesPgs[3][1] = "Page 4: Status Check";
+	arrLesPgs[4][0] = "11050";	arrLesPgs[4][1] = "Page 5: The Purpose TRA Serves";
+	arrLesPgs[5][0] = "11060";	arrLesPgs[5][1] = "Page 6: The Purpose TRA Does Not Serve";
+	arrLesPgs[6][0] = "11070";	arrLesPgs[6][1] = "Page 7: Status Check";
+	arrLesPgs[7][0] = "11080";	arrLesPgs[7][1] = "Page 8: TRA Requirements";
+	arrLesPgs[8][0] = "11090";	arrLesPgs[8][1] = "Page 9: Congressional Interest";
+	arrLesPgs[9][0] = "11100";	arrLesPgs[9][1] = "Page 10: TRA Milestone Requirements";
+	arrLesPgs[10][0] = "11120";	arrLesPgs[10][1] = "Page 11: Milestone B Requirements";
+	arrLesPgs[11][0] = "11130";	arrLesPgs[11][1] = "Page 12: Milestone C Requirements";
+	arrLesPgs[12][0] = "11140";	arrLesPgs[12][1] = "Page 13: Milestone Certification";
+	arrLesPgs[13][0] = "11150";	arrLesPgs[13][1] = "Page 14: Why is the TRA Process Needed?";
+	arrLesPgs[14][0] = "11160";	arrLesPgs[14][1] = "Page 15: The Need to Standardize Processes";
+	arrLesPgs[15][0] = "11170";	arrLesPgs[15][1] = "Page 16: Status Check";
+	arrLesPgs[16][0] = "11180";	arrLesPgs[16][1] = "Page 17: TRA Benefits";
+	arrLesPgs[17][0] = "11190";	arrLesPgs[17][1] = "Page 18: How is the Benefit Measured?";
+	arrLesPgs[18][0] = "11200";	arrLesPgs[18][1] = "Page 19: Status Check";
+	arrLesPgs[19][0] = "11210";	arrLesPgs[19][1] = "Page 20: TRA Drawbacks";
+	arrLesPgs[20][0] = "11220";	arrLesPgs[20][1] = "Page 21: Status Check";
+	arrLesPgs[21][0] = "11230";	arrLesPgs[21][1] = "Page 22: Technology Maturity Definition";
+	arrLesPgs[22][0] = "11240";	arrLesPgs[22][1] = "Page 23: Technology Maturity Factors to Consider";
+	arrLesPgs[23][0] = "11250";	arrLesPgs[23][1] = "Page 24: Technology Maturity Environmental Domains";
+	arrLesPgs[24][0] = "11260";	arrLesPgs[24][1] = "Page 25: Status Check";
+	arrLesPgs[25][0] = "11270";	arrLesPgs[25][1] = "Page 26: What is the MSA Phase?";
+	arrLesPgs[26][0] = "11280";	arrLesPgs[26][1] = "Page 27: Early Evaluation of Technology Maturity at Milestone A and Milestone B TRA Differences";
+	arrLesPgs[27][0] = "11290";	arrLesPgs[27][1] = "Page 28: The Early Evaluation of Technology Maturity Best Practice";
+	arrLesPgs[28][0] = "11300";	arrLesPgs[28][1] = "Page 29: Status Check";
+	arrLesPgs[29][0] = "11310";	arrLesPgs[29][1] = "Page 30: TRA Steps";
+	arrLesPgs[30][0] = "11320";	arrLesPgs[30][1] = "Page 31: Important TRA Considerations";
+	arrLesPgs[31][0] = "11330";	arrLesPgs[31][1] = "Page 32: Status Check";
+	arrLesPgs[32][0] = "11340";	arrLesPgs[32][1] = "Page 33: Status Check";
+	arrLesPgs[33][0] = "11350";	arrLesPgs[33][1] = "Page 34: Lesson Summary";
+	
+	//Write it out
+	getLessonTopics();
+	document.write(strHTML);
+	document.close();
+</script>
+</div>
+
+<div id="close">
+<a href="javascript:window.close();">Close this window</a></div>
+<!-- InstanceEndEditable -->
+
+
+
+</body>
+<!-- InstanceEnd --></html>
+

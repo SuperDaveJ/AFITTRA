@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Popup Information</title>
+<link href="../../afit_tra.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+	#poptext {
+		margin-top: 6px;
+		width: 610px;
+		height: 400px;
+		overflow: auto;
+		scrollbar-arrow-color:#ddd; 
+		scrollbar-base-color:#333;
+	}
+</style>
+
+<script language="JavaScript" type="text/JavaScript" src="../../scripts/afit_tra.js"></script>
+
+<script type="text/JavaScript">
+
+var iTerm = getQueryValue('popterm')
+
+var arrPopup = new Array();
+var numTerm = 8;
+for (var i=0; i<numTerm; i++) {
+	arrPopup[i] = [];
+}
+
+arrPopup[0][0]  = "Understanding the Model";
+arrPopup[0][1]  = "<p>Besides the criteria for determining CTEs, what makes determining maturity so difficult is the fact that we might not completely understand where the ideas or models come from and what the exploitation is suppose to emulate.</p><p>For example, radar, compasses, and infrared detectors are all man-made contraptions that enable humans to stretch beyond our natural senses. They allow us to detect things in our environment that we otherwise could not sense. These gadgets are far from original. An examination of the sensory world of animals reveals that nature invented them long before we did. Examples include:</p><ul><li>Echolocation (whales, dolphins, bats)</li><li>Infrared vision (snakes, frogs, etc.)</li><li>Electric sense (eels, electric catfish, etc.)</li><li>Magnetic sense (homing pigeons, migratory birds, salmon, etc.).</li> </ul><p>Consequently, a CTE could be classified as immature or be perceived as unacceptable because we might have failed to fully assess all of the plausible options applicable to its capability. By better understanding models that undergird CTEs, we enable ourselves to fully realize truth tables and / or state condition tables, and thereby gain insight into why that CTE (with the capability we need) is immature and what to do or not do about it.</p>";
+
+arrPopup[1][0]  = "Optimized Resources"
+arrPopup[1][1]  = "<p>Resources are aligned to support the Air Force mission based on Air Force priorities</p>";
+
+arrPopup[2][0]  = "Optimized Repair Planning"
+arrPopup[2][1]  = "<p>Global repair planners balance Air Force requirements with capacity and capability to align their plans with equipment availability goals</p>";
+
+arrPopup[3][0]  = "Total Asset Visibility"
+arrPopup[3][1]  = "<p>Real-time information about equipment, parts, and supplies as they move throughout the Air Force supply chain</p>";
+
+arrPopup[4][0]  = "Logistics Netcentricity"
+arrPopup[4][1]  = "<p>A fully integrated logistics network enabled by a global, centralized, and interactive IT system</p>";
+
+arrPopup[5][0]  = "Data Accuracy"
+arrPopup[5][1]  = "<p>Standard processes / IT systems, including automated capabilities (e.g., RFID), improve data accuracy and reduce manual entry</p>";
+
+arrPopup[6][0]  = "Centralized Asset Management"
+arrPopup[6][1]  = "<p>Programming, budgeting and execution of weapon system funding is prioritized and centrally managed to meet Air Force needs</p>";
+
+arrPopup[7][0]  = "Predictive Maintenance"
+arrPopup[7][1]  = "<p>Maintenance and usage data analysis is used to be more effective in supply, maintenance and ops planning and scheduling activities</p>";
+
+</script>
+</head>
+
+<body> 
+<!-- You don't need to change anything in the body tag -->
+
+<div id="popupContent">
+	<p id="poptitle" class="popupTitle"></p>
+    <div id="poptext"></div>
+</div>
+
+<script language="javascript" type="text/javascript" >
+	document.getElementById('poptitle').innerHTML = arrPopup[iTerm-1][0];
+	document.getElementById('poptext').innerHTML = arrPopup[iTerm-1][1];
+</script>
+
+</body>
+</html>

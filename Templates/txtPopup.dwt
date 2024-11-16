@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>Popup Information</title>
+<!-- TemplateEndEditable -->
+<link href="../afit_tra.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+	#poptext {
+		margin-top: 6px;
+		width: 610px;
+		height: 400px;
+		overflow: auto;
+		scrollbar-arrow-color:#ddd; 
+		scrollbar-base-color:#333;
+	}
+</style>
+
+<script language="JavaScript" type="text/JavaScript" src="../scripts/afit_tra.js"></script>
+<!-- TemplateBeginEditable name="ScriptArea" -->
+<script type="text/JavaScript">
+
+var iTerm = getQueryValue('popterm')
+
+var arrPopup = new Array();
+var numTerm = 8;
+for (var i=0; i<numTerm; i++) {
+	arrPopup[i] = [];
+}
+
+arrPopup[0][0]  = "popTitle1";
+arrPopup[0][1]  = "<p>popText1 </p>";
+
+arrPopup[1][0]  = "Optimized Resources"
+arrPopup[1][1]  = "<p>Resources are aligned to support the Air Force mission based on Air Force priorities</p>";
+
+arrPopup[2][0]  = "Optimized Repair Planning"
+arrPopup[2][1]  = "<p>Global repair planners balance Air Force requirements with capacity and capability to align their plans with equipment availability goals</p>";
+
+arrPopup[3][0]  = "Total Asset Visibility"
+arrPopup[3][1]  = "<p>Real-time information about equipment, parts, and supplies as they move throughout the Air Force supply chain</p>";
+
+arrPopup[4][0]  = "Logistics Netcentricity"
+arrPopup[4][1]  = "<p>A fully integrated logistics network enabled by a global, centralized, and interactive IT system</p>";
+
+arrPopup[5][0]  = "Data Accuracy"
+arrPopup[5][1]  = "<p>Standard processes / IT systems, including automated capabilities (e.g., RFID), improve data accuracy and reduce manual entry</p>";
+
+arrPopup[6][0]  = "Centralized Asset Management"
+arrPopup[6][1]  = "<p>Programming, budgeting and execution of weapon system funding is prioritized and centrally managed to meet Air Force needs</p>";
+
+arrPopup[7][0]  = "Predictive Maintenance"
+arrPopup[7][1]  = "<p>Maintenance and usage data analysis is used to be more effective in supply, maintenance and ops planning and scheduling activities</p>";
+
+</script>
+<!-- TemplateEndEditable -->
+</head>
+
+<body> 
+<!-- You don't need to change anything in the body tag -->
+
+<div id="popupContent">
+	<p id="poptitle" class="popupTitle"></p>
+    <div id="poptext"></div>
+    
+<!-- TemplateBeginEditable name="Anything" -->
+<!-- TemplateEndEditable -->
+</div>
+
+<script language="javascript" type="text/javascript" >
+	document.getElementById('poptitle').innerHTML = arrPopup[iTerm-1][0];
+	document.getElementById('poptext').innerHTML = arrPopup[iTerm-1][1];
+</script>
+
+</body>
+</html>

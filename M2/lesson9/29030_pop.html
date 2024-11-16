@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/txtPopup.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Popup Information</title>
+<!-- InstanceEndEditable -->
+<link href="../../afit_tra.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+	#poptext {
+		margin-top: 6px;
+		width: 610px;
+		height: 400px;
+		overflow: auto;
+		scrollbar-arrow-color:#ddd; 
+		scrollbar-base-color:#333;
+	}
+</style>
+
+<script language="JavaScript" type="text/JavaScript" src="../../scripts/afit_tra.js"></script>
+<!-- InstanceBeginEditable name="ScriptArea" -->
+<script type="text/javascript">
+
+var iTerm = getQueryValue('popterm')
+
+var arrPopup = new Array();
+var numTerm = 1;
+for (var i=0; i<numTerm; i++) {
+	arrPopup[i] = [];
+}
+
+arrPopup[0][0]  = "";
+arrPopup[0][1]  = "<p style='text-align:center;'><img src='../images/29030b.png' alt='The Know / Care process.' /></p>";
+
+
+
+</script>
+<!-- InstanceEndEditable -->
+</head>
+
+<body> 
+<!-- You don't need to change anything in the body tag -->
+
+<div id="popupContent">
+	<p id="poptitle" class="popupTitle"></p>
+    <div id="poptext"></div>
+    
+<!-- InstanceBeginEditable name="Anything" -->
+<!-- InstanceEndEditable -->
+</div>
+
+<script language="javascript" type="text/javascript" >
+	document.getElementById('poptitle').innerHTML = arrPopup[iTerm-1][0];
+	document.getElementById('poptext').innerHTML = arrPopup[iTerm-1][1];
+</script>
+
+</body>
+<!-- InstanceEnd --></html>

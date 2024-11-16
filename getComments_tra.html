@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>AFIT TRA Main Menu - Comments</title>
+<style type="text/css">
+body {
+	font: 100% Verdana, Arial, Helvetica, sans-serif;
+	background: #FFFFFF;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	color: #000000;
+}
+
+#container {
+	width: 500px;
+	background: #FFFFFF;
+	margin: 0 auto;
+	border: 1px solid #FFFFFF;
+	text-align: left;
+}
+
+h1 {
+	font-size:20px;
+	font-weight:bold;
+	text-align:center;
+}
+p.mod {
+	margin: 15px 0 0 20px;
+	padding:0;
+	font-size:16px;
+	font-weight:bold;
+}
+
+p.lesson {
+	margin: 0 0 0 60px;
+	padding: 0;
+	font-size:13px;
+	font-weight:normal;
+}
+
+</style>
+
+<script language="javascript">
+var vpPath = "http://www.c2mm.net/virtualPilot/";	//path to Virtual Pilot site
+var cID = "1796_AFIT_TRA"
+
+function getComments(mID, lID) {
+	if ( (mID==0) && (lID==0) ) {
+		//whole course comments
+		viewWin = window.open(vpPath + 'getAWholeCourseComments.asp?cID='+cID, "Comments", "width=960,height=800,scrollbars=yes,resizable=yes");
+	} else {
+		//single lesson comments
+		viewWin = window.open(vpPath + 'getAWholeLessonComments.asp?cID='+cID+'&mID='+mID+'&lID='+lID, "Comments", "width=960,height=800,scrollbars=yes,resizable=yes");
+	}
+}
+</script>
+
+</head>
+
+<body>
+
+<div id="container">
+<h1>AFIT TRA Comments Menu</h1>
+
+<p class="mod">Module 1. Fundamentals of TRAs</p>
+<p class="lesson"><a href="javascript:getComments(1, 1)">Lesson 1. Introduction to TRAs</a></p>
+<p class="lesson"><a href="javascript:getComments(1, 2)">Lesson 2. TRA Support Structure</a></p>
+
+<p class="mod">Module 2. TRA Process</p>
+<p class="lesson"><a href="javascript:getComments(2, 1)">Lesson 1. Initiate a TRA</a></p>
+<p class="lesson"><a href="javascript:getComments(2, 2)">Lesson 2. Plan a TRA</a></p>
+<p class="lesson"><a href="javascript:getComments(2, 3)">Lesson 3. Identify an IRP</a></p>
+<p class="lesson"><a href="javascript:getComments(2, 4)">Lesson 4. Train the IRP</a></p>
+<p class="lesson"><a href="javascript:getComments(2, 5)">Lesson 5. Create a Candidate CTE List</a></p>
+<p class="lesson"><a href="javascript:getComments(2, 6)">Lesson 6. Finalize the CTE List</a></p>
+<p class="lesson"><a href="javascript:getComments(2, 7)">Lesson 7. Collect Data</a></p>
+<p class="lesson"><a href="javascript:getComments(2, 8)">Lesson 8. Perform the Assessment</a></p>
+<p class="lesson"><a href="javascript:getComments(2, 9)">Lesson 9. Document the TRA</a></p>
+<p class="lesson"><a href="javascript:getComments(2, 10)">Lesson 10. Staff the TRA</a></p>
+
+<p class="mod">Module 3. TRA Assessment</p>
+<p class="lesson"><a href="javascript:getComments(3, 1)">Lesson 1. TRA in Action</a></p>
+<p class="lesson"><a href="javascript:getComments(3, 2)">Lesson 2. TRA in Action (Section 508)</a></p>
+
+<p class="mod">Whole Course</p>
+<p class="lesson"><a href="javascript:getComments(0, 0)">Get all comments for the whole course</a></p>
+
+</div>
+
+</body>
+</html>

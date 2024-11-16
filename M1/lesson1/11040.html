@@ -1,0 +1,158 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/tra_base.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>AFIT - Technology Readiness Assessment</title>
+<!-- InstanceEndEditable -->
+<link href="../../afit_tra.css" rel="stylesheet" type="text/css" />
+
+
+<script type="text/javascript" src="../../scripts/afit_tra.js"></script>
+<script type="text/javascript" src="../../scripts/jquery-1.3.2.min.js"></script>
+<script type="text/javascript" src="../../scripts/jqFunctions.js"></script>
+<script type="text/javascript" src="../../scripts/swfobject_modified.js"></script>
+<!-- InstanceBeginEditable name="head" -->
+<script language="JavaScript" type="text/javascript">
+	//Set the following 3 variables to true accordingly
+	blnFirstPage = false;
+	blnLastPage = false;
+	blnHasCC = false;
+
+	function pgInitialize() {
+		//if ( !parent.isPageViewed('11040')) hideNextButton();
+	}
+	
+	function goNext() {
+		nextURL = "11050.html";
+		parent.gotoPage("f", nextURL);
+	}
+	
+	function goBack() {
+		backURL = "11030.html";
+		parent.gotoPage("b", backURL);
+	}
+
+var widthTable = 90;	//table width	
+var nItems = 4;
+var strCorrectAns = "1,0,0,0,"
+arrFdbk = new Array(nItems);
+arrFdbk[0]=""
+arrFdbk[1]="That’s not quite right. Remember, the TRA is performed to assess potential system initial faults or inherent problems."
+arrFdbk[2]="That’s not quite right. Remember, the TRA is performed to assess potential system problems based on length of use and whether faults and problems have been removed or reduced."
+arrFdbk[3]="That’s not quite right. Remember, the TRA is performed to assess potential system initial faults or inherent problems, not what the potential fixes for those problems would be."
+lastCFdbk = "A TRA is a formal, systematic, metric-based process and accompanying report intended to assess technology maturity. "
+lastWFdbk = "A TRA is a formal, systematic, metric-based process and accompanying report intended to assess technology maturity."
+distracters = new Array(nItems);
+distracters[0]="Technology maturity"
+distracters[1]="Cost-benefit analysis"
+distracters[2]="Quality of architecture"
+distracters[3]="Technological needs"
+
+</script>
+<script type="text/javascript" src="../../scripts/MC.js"></script>
+
+<!-- InstanceEndEditable -->
+</head>
+
+<body  class="holder" onload="pgInitialize()" >
+<div id="container">
+
+  <div id="titlebar">
+  	<div id="title_text">
+    	<span class="module"><!-- InstanceBeginEditable name="moduleTitle" -->Fundamentals of TRAs &gt; <!-- InstanceEndEditable --></span><span class="lesson"><!-- InstanceBeginEditable name="lessonTitle" -->Introduction to TRAs<!-- InstanceEndEditable --></span>
+    </div>
+  </div>
+  
+  <div id="pagenumber"><!-- InstanceBeginEditable name="pageNum" -->4/34<!-- InstanceEndEditable --></div>
+  
+  <div id="content_holder"> <!-- contains title, text and graphic/flash -->
+  
+  	<div id="content">
+<!-- InstanceBeginEditable name="contents" -->
+    	<h2 class="topic_title">Status Check</h2>
+        
+  	  <p>A TRA is a formal, systematic, metric-based process and accompanying report intended to assess which one of the following areas?</p>
+    	<form name="qForm">
+			<script language="javascript"> 
+				writeQuestion()
+				changeCursor('pointer');
+			</script>
+    	</form>
+  
+      <!-- InstanceEndEditable -->
+  	</div>
+  
+  </div> <!-- End of content_holder -->
+    <div id="action"><!-- InstanceBeginEditable name="action" --><!-- InstanceEndEditable --></div>
+    <div id="dlink"><!-- InstanceBeginEditable name="dlink" -->d-link<!-- InstanceEndEditable --></div>
+  
+  <!-- InstanceBeginEditable name="Prompt" --><div id="prompt">Select the correct answer, then click Done.</div>
+<!-- InstanceEndEditable -->
+    
+  <div id="navbar">  <!-- contains all buttons -->
+  
+    <a href="javascript:goNext()"><div id="next"></div></a>
+    
+    <a href="javascript:goBack()"><div id="back"></div></a>
+    
+  	<a href="javascript:exitConfirm()"><div id="exit"></div></a>
+    
+  	<div id="progressbar"> </div>
+    
+    <div id="pagecounter"></div>
+    
+	<div id="submenu">  <!-- contains MENU, TOPICS, ASSETS, and HELP -->
+    
+        <a href="javascript: parent.toModuleMenu();" ><div id="menu"></div></a>
+        
+      <a href="javascript:showTopics()"> <div id="topics"></div></a>
+        
+        <a href="javascript:toggle_asset()"><div id="assets"></div></a>
+        
+        <a href="javascript:toggle_help()"><div id="help"></div></a>
+
+    </div> <!-- End of submenu -->
+
+	<div id="assetpanel">
+    	<div id="gloss" class="panel"><a class="panel" href="javascript:javascript:openGlossary();">Glossary</a></div>
+        <div id="doc" class="panel"><a class="panel" href="javascript:;">Documents</a></div>
+        <div id="ref" class="panel"><a class="panel" href="javascript:javascript:openReferences();">References</a></div>
+    </div>
+    
+	<div id="helppanel">
+    	<div id="admin" class="panel"><a class="panel" href="javascript:;">Course Admin</a></div>
+        <div id="sysreq" class="panel"><a class="panel" href="javascript:;">System Req</a></div>
+        <div id="nav" class="panel"><a class="panel" href="javascript:;">Navigation</a></div>
+    </div>
+    
+	<div id="options">  <!-- containes Closed Caption, Audio, and Refresh -->
+        
+		<a href="javascript:refresh()" accesskey="r"><div id="refresh"></div></a>
+        
+        <a href="javascript:showCC()"><div id="cc"></div></a>
+        
+        <a href="#" class="audioAction" id="audioImage"><div id="audio"></div></a>
+        
+    </div> <!-- End of options -->
+    
+  </div> <!-- End of Navbar -->
+  
+    
+</div> <!-- End of Container -->
+<!-- InstanceBeginEditable name="DD" -->Put DD layers here<!-- InstanceEndEditable -->
+<div id="comment_link">
+    <a href="javascript:addComment()">Add Comment</a>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="javascript:viewComment()">View Comments</a>
+</div>
+<script language="javascript">
+	if (parent.isPilot == true) {
+		moduleID = parent.module;
+		lessonID = parent.getLesson();
+	} else {
+		document.getElementById("comment_link").style.visibility = "hidden";
+	}
+</script>
+</body>
+<!-- InstanceEnd --></html>

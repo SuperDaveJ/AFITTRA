@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/lessonTopic.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Lesson Topics</title>
+<!-- InstanceEndEditable -->
+<link rel="stylesheet" type="text/css" href="../../lessonTopics.css" />
+<script type="text/javascript" src="../../scripts/afit_tra.js"></script>
+<script language="javascript">
+var strHTML = "";
+opener.parent.entryNumber = 1;
+
+function jumpToPage(pgURL) {
+	strTemp = window.opener.location.href;
+	iTemp = strTemp.lastIndexOf("/");
+	pgURL = strTemp.substring(0, iTemp+1) + pgURL;
+	window.opener.location.href = pgURL;
+}
+
+function getLessonTopics() {
+	strHTML += "<a href='javascript:jumpToPage(\"" + arrLesPgs[0][0] + ".html\")' class='allowed'>" + arrLesPgs[0][1] + "</a>";
+	for (var i=1; i<arrLesPgs.length; i++) {
+		if ( opener.parent.isPageViewed(arrLesPgs[i][0]) ) {
+			strHTML += "<br /><a href='javascript:jumpToPage(\"" + arrLesPgs[i][0] + ".html\")' class='allowed'>" + arrLesPgs[i][1] + "</a>";
+		} else {
+			strHTML += "<br /><span class='notallowed'>" + arrLesPgs[i][1] + "</span>";
+		}
+	}
+}
+
+</script>
+</head>
+
+<body>
+<!-- InstanceBeginEditable name="topicTitle" -->
+<h1 class="title"><span class="mocule">Module 2</span>: Lesson 5 Topics</h1>
+<!-- InstanceEndEditable -->
+
+<!-- InstanceBeginEditable name="JavaScript1" -->
+<div id="content" class="lessonTopic">
+<h2> <span class="mocule">Lesson 5:</span>  Create a Candidate CTE List</h2>
+<script language="JavaScript" type="text/javascript">
+	//Put page files and titles in a 2-D array here
+	var nPages = 22;
+	var arrLesPgs = [];
+	for (var i=0; i<nPages; i++) arrLesPgs[i] = [];
+	arrLesPgs[0][0] = "25010";	arrLesPgs[0][1] = "Page 1: Lesson Overview";
+	arrLesPgs[1][0] = "25020";	arrLesPgs[1][1] = "Page 2: CTE Definition";
+	arrLesPgs[2][0] = "25030";	arrLesPgs[2][1] = "Page 3: CTEs and the Acquisition Framework";
+	arrLesPgs[3][0] = "25040";	arrLesPgs[3][1] = "Page 4: Status Check";
+	arrLesPgs[4][0] = "25050";	arrLesPgs[4][1] = "Page 5: CTE Classification";
+	arrLesPgs[5][0] = "25060";	arrLesPgs[5][1] = "Page 6: Status Check";
+	arrLesPgs[6][0] = "25070";	arrLesPgs[6][1] = "Page 7: Status Check";
+	arrLesPgs[7][0] = "25080";	arrLesPgs[7][1] = "Page 8: Steps for Creating a Candidate CTE List";
+	arrLesPgs[8][0] = "25090";	arrLesPgs[8][1] = "Page 9: Status Check";
+	arrLesPgs[9][0] = "25100";	arrLesPgs[9][1] = "Page 10: CTE Questions Framework";
+	arrLesPgs[10][0] = "25110";	arrLesPgs[10][1] = "Page 11: Status Check";
+	arrLesPgs[11][0] = "25120";	arrLesPgs[11][1] = "Page 12: Systems Engineering Definition";
+	arrLesPgs[12][0] = "25130";	arrLesPgs[12][1] = "Page 13: Systems Engineering Approach";
+	arrLesPgs[13][0] = "25140";	arrLesPgs[13][1] = "Page 14: Status Check";
+	arrLesPgs[14][0] = "25150";	arrLesPgs[14][1] = "Page 15: Systems Engineering Approach Outcomes";
+	arrLesPgs[15][0] = "25160";	arrLesPgs[15][1] = "Page 16: Status Check";
+	arrLesPgs[16][0] = "25170";	arrLesPgs[16][1] = "Page 17: Environments";
+	arrLesPgs[17][0] = "25180";	arrLesPgs[17][1] = "Page 18: Requirements and Environments";
+	arrLesPgs[18][0] = "25190";	arrLesPgs[18][1] = "Page 19: Status Check";
+	arrLesPgs[19][0] = "25200";	arrLesPgs[19][1] = "Page 20: Environment Categories";
+	arrLesPgs[20][0] = "25210";	arrLesPgs[20][1] = "Page 21: Status Check";
+	arrLesPgs[21][0] = "25220";	arrLesPgs[21][1] = "Page 22: Lesson Summary";
+	
+	//Write it out
+	getLessonTopics();
+	document.write(strHTML);
+	document.close();
+</script>
+</div>
+
+<div id="close">
+<a href="javascript:window.close();">Close this window</a></div>
+<!-- InstanceEndEditable -->
+
+
+
+</body>
+<!-- InstanceEnd --></html>
+

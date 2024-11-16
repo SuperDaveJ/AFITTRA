@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/txtPopup.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Popup Information</title>
+<!-- InstanceEndEditable -->
+<link href="../../afit_tra.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+	#poptext {
+		margin-top: 6px;
+		width: 610px;
+		height: 400px;
+		overflow: auto;
+		scrollbar-arrow-color:#ddd; 
+		scrollbar-base-color:#333;
+	}
+</style>
+
+<script language="JavaScript" type="text/JavaScript" src="../../scripts/afit_tra.js"></script>
+<!-- InstanceBeginEditable name="ScriptArea" -->
+<script type="text/javascript">
+
+var iTerm = getQueryValue('popterm')
+
+var arrPopup = new Array();
+var numTerm = 1;
+for (var i=0; i<numTerm; i++) {
+	arrPopup[i] = [];
+}
+
+arrPopup[0][0]  = "AFI 63-101, Section 3.16";
+arrPopup[0][1]  = "<p>IAW with AFI 63-101, 3.16, the source selection approach, as part of the acquisition strategy, shall be developed to reduce risk over the life cycle of the program. This includes identifying the strengths, weaknesses, domain experience, process capability, development capacity, and past performance for all developer team members with significant development responsibilities. Source selection guidance and procedures are contained in FAR Part 15, DFARS Part 215, AFFARS 5315.3 and AFFARS Mandatory Procedure 5315.3. Request for proposal (RFP) and source selection approach should require the following TRA information, so that it can be integrated into contracts:</p><ul><li>Expectations for warfighters, users, decision-makers, evaluation teams, and industry from the outset of the source selection. This includes an understanding by all of the desired end-state and clear expectations to industry on proposal requirements and timelines.</li><li>A clear understanding of the methods of estimating costs for the program including uncertainty analysis and verification requirements. The government most probable cost estimate may need to be verified by a certified cost estimator IAW SAF / FM policy / guidance.</li><li>Identification of the key discriminators from among the mission requirements. These must represent the key areas of importance and emphasis to be considered in the source selection decision and support meaningful comparison and discrimination between and among competing proposals.</li><li>Establishment of the minimum performance or capability requirements against which offers will be judged. For contracts after MS B this includes minimum prototype performance. The PM shall address technology maturity in the solicitation supporting source selections conducted in conjunction with a MS / KDP B. The measure of merit that the technology in a program has been demonstrated in a relevant environment is that all CTEs are at TRL 6 or greater.</li> <li>The PM shall include language in solicitations for the EMD phase advising offerors that (1) the government will not award a contract to an offeror whose proposal is based on CTEs that have not been demonstrated in a relevant environment, and (2) that offerors will be required to specify the technology readiness level of the CTEs on which their proposal is based and to provide reports documenting how those CTEs have been demonstrated in a relevant environment.</li> </ul>";
+
+</script>
+<!-- InstanceEndEditable -->
+</head>
+
+<body> 
+<!-- You don't need to change anything in the body tag -->
+
+<div id="popupContent">
+	<p id="poptitle" class="popupTitle"></p>
+    <div id="poptext"></div>
+    
+<!-- InstanceBeginEditable name="Anything" -->
+<!-- InstanceEndEditable -->
+</div>
+
+<script language="javascript" type="text/javascript" >
+	document.getElementById('poptitle').innerHTML = arrPopup[iTerm-1][0];
+	document.getElementById('poptext').innerHTML = arrPopup[iTerm-1][1];
+</script>
+
+</body>
+<!-- InstanceEnd --></html>
